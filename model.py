@@ -9,7 +9,8 @@ from sklearn.metrics import accuracy_score
 def train_model():
     # Load dataset
     iris = load_iris()
-    X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target,
+     test_size=0.2, random_state=42)
 
     # Train model
     model = LogisticRegression(max_iter=200)
