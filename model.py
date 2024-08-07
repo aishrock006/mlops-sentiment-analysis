@@ -26,4 +26,5 @@ def train_model():
 
 if __name__ == "__main__":
     accuracy = train_model()
+    print('feature branch update!')
     print(f"Model Accuracy: {accuracy}")
